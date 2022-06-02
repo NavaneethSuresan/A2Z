@@ -1,28 +1,77 @@
 * {
   padding: 0;
   margin: 0;
+  font-family: poppins;
 }
 .navbar {
   background-color: #222f42;
   display: flex;
   align-items: center;
-  
+  justify-content: space-around;
 }
-.inputfield{
- display: flex;
+.inputfield {
+  display: flex;
+  align-items: center;
 }
-.inputfield button{
- padding:0.5vw;
- background-color: orangered;
- border:none
+.inputfield button {
+  padding: 0.5vw 0.6vw;
+  background-color: orangered;
+  border: none;
 }
-.inputfield p{
- font-size: 1.5vw;
+
+.inputfield p {
+  font-size: 1vw;
+  color: black;
+  border: 1px solid black;
+  border: none;
+  background-color: #e9e9e7;
+  padding:0.5vw;
 }
-.first img{
- width:100%;
+.inputfield select {
+  border: 1px solid black;
+  border: none;
+  background-color: #e9e9e7;
 }
-.inputfield select{
- background-color: #222f42;
- border:none
+.inputfield input{
+  padding:0.48vw;
+}
+.first img {
+  width: 100%;
+}
+.inputfield select {
+  background-color: #e9e9e7;
+  border: none;
+}
+.userinfo {
+  display: flex;
+  gap: 8%;
+  align-items: center;
+  border-left:1px solid white;
+  padding-left:2vw;
+}
+.userinfo p{
+  color:white;
+  font-size: 1vw;
+}
+.userinfo select {
+  background-color: inherit;
+  border: none;
+  color:white;
+}
+
+.cartinfo {
+  display: flex;
+  gap: 8%;
+  align-items: center;
+  border-left:1px solid white;
+  padding-left:2vw;
+}
+.cartinfo select {
+  background-color: inherit;
+  border: none;
+  color:white;
+}
+.cartinfo p{
+  color:white;
+  font-size:1vw;
 }
