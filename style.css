@@ -151,3 +151,48 @@ section.featuredrecomendations {
 #winter{
   padding:1vw 2vw 1vw 2vw;
 }
+.arrows{
+  position: relative;
+}
+.arrows .post-slider {
+  width: 90%;
+  height: 450px;
+  overflow: hidden;
+  margin-left: 3%;
+}
+ .post-slider .item1{
+  display: inline-block;
+  
+  height: 250px;
+  width: 250px;
+}
+.next{
+  position: absolute;
+  top: 31%;
+  right: 0%;
+  color: black;
+  cursor: pointer;
+  font-size:2vw;
+}
+.previous{
+  position: absolute;
+  top: 31%;
+  left: 2%;
+  color: black;
+  cursor: pointer;
+}
+.arrows .post-slider .item1 .headphones{
+  left: 12%;
+  width:75%;
+  height:76%;
+  position: relative;
+}
+.nexts{
+  position: absolute;
+  right: 2%;
+  top: 31%;
+  cursor: pointer;
+}
+div.item1.slick-slide.slick-cloned.slick-active{
+  width: 200px;
+}

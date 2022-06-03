@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
     <nav class="navbar">
@@ -36,73 +42,136 @@
       <h3 class="heading1">
         Your recently viewed items & featured recomendations
       </h3>
-      <div class="slidingitems">
-        <div class="item1">
-          <img src="img/headphone.png" alt="" class="headphones" />
-          <h4 class="productname">Headphones</h4>
-          <h5 class="description">BEATS BY DR.DRE</h5>
-          <h3 class="cost">$200</h3>
-        </div>
-        <div class="item1">
-          <img src="img/watch.png" alt="" class="headphones" />
-          <h4 class="productname">Headphones</h4>
-          <h5 class="description">BEATS BY DR.DRE</h5>
-          <h3 class="cost">$200</h3>
-        </div>
-        <div class="item1">
-          <img src="img/shoes.png" alt="" class="headphones" />
-          <h4 class="productname">Headphones</h4>
-          <h5 class="description">BEATS BY DR.DRE</h5>
-          <h3 class="cost">$200</h3>
-        </div>
-        <div class="item1">
-          <img src="img/luggage.png" alt="" class="headphones" />
-          <h4 class="productname">Headphones</h4>
-          <h5 class="description">BEATS BY DR.DRE</h5>
-          <h3 class="cost">$200</h3>
-        </div>
-        <div class="item1">
-          <img src="img/jacket.png" alt="" class="headphones" />
-          <h4 class="productname">Headphones</h4>
-          <h5 class="description">BEATS BY DR.DRE</h5>
-          <h3 class="cost">$200</h3>
+      <div class="arrows">
+        <i class="fas fa-arrow-left previous"></i>
+        <i class="fas fa-arrow-right nexts"></i>
+        <div class="post-slider">
+          <div class="item1">
+            <img src="img/headphone.png" alt="" class="headphones" />
+            <h4 class="productname">Headphones</h4>
+            <h5 class="description">BEATS BY DR.DRE</h5>
+            <h3 class="cost">$200</h3>
+          </div>
+          <div class="item1" style="width: 250px">
+            <img src="img/watch.png" alt="" class="headphones" />
+            <h4 class="productname">Headphones</h4>
+            <h5 class="description">BEATS BY DR.DRE</h5>
+            <h3 class="cost">$200</h3>
+          </div>
+          <div class="item1">
+            <img src="img/shoes.png" alt="" class="headphones" />
+            <h4 class="productname">Headphones</h4>
+            <h5 class="description">BEATS BY DR.DRE</h5>
+            <h3 class="cost">$200</h3>
+          </div>
+          <div class="item1">
+            <img src="img/luggage.png" alt="" class="headphones" />
+            <h4 class="productname">Headphones</h4>
+            <h5 class="description">BEATS BY DR.DRE</h5>
+            <h3 class="cost">$200</h3>
+          </div>
+          <div class="item1">
+            <img src="img/jacket.png" alt="" class="headphones" />
+            <h4 class="productname">Headphones</h4>
+            <h5 class="description">BEATS BY DR.DRE</h5>
+            <h3 class="cost">$200</h3>
+          </div>
         </div>
       </div>
     </section>
     <h3 id="ah3">Amazon-Today's Deal</h3>
     <section class="grid">
       <div class="card">
-        <img src="img/shirtgrey.png" alt="">
+        <img src="img/shirtgrey.png" alt="" />
         <div class="info">
-          <p>Mandlbaum's <br>
-          $199.9</p>
+          <p>
+            Mandlbaum's <br />
+            $199.9
+          </p>
           <button>Add to cart</button>
         </div>
       </div>
       <div class="card">
-        <img src="img/wintercamp.png" id='winter'alt="">
+        <img src="img/wintercamp.png" id="winter" alt="" />
         <div class="info">
-          <p>Winter camp <br>
-          $199.9</p>
+          <p>
+            Winter camp <br />
+            $199.9
+          </p>
           <button>Add to cart</button>
         </div>
       </div>
       <div class="card">
-        <img src="img/cycling.png" alt="">
+        <img src="img/cycling.png" alt="" />
         <div class="info">
-          <p>Cycling <br>
-          $199.9</p>
+          <p>
+            Cycling <br />
+            $199.9
+          </p>
           <button>Add to cart</button>
         </div>
       </div>
       <div class="card">
-        <img src="img/roboninja.png" alt="">
+        <img src="img/roboninja.png" alt="" />
         <div class="info">
-          <p>RoboNinja <br>
-          $199.9</p>
+          <p>
+            RoboNinja <br />
+            $199.9
+          </p>
           <button>Add to cart</button>
         </div>
       </div>
     </section>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(".post-slider").slick({
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          autoplay: false,
+          dots: false,
+          autoplaySpeed: 2000,
+          nextArrow: $(".nexts"),
+          prevArrow: $(".previous"),
+
+          responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 4,
+                slidesToScroll: 4,
+                infinite: false,
+                dots: false,
+              },
+            },
+            {
+              breakpoint: 600,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+              },
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+              },
+            },
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+          ],
+        });
+      });
+    </script>
   </body>
 </html>
