@@ -75,3 +75,36 @@
   color:white;
   font-size:1vw;
 }
+.heading1{
+  font-weight: 300;
+  text-align: center;
+  margin-top: -1%;
+  padding-top:5%;
+}
+.item1 {
+  width: 20%;
+  padding-bottom: 5%;
+}
+img.headphones {
+  width: 100%;
+}
+h4.productname {
+  text-align: center;
+  font-weight: 400;
+}
+h5.description {
+  text-align: center;
+  font-weight: 400;
+}
+.slidingitems {
+  margin-top: 5%;
+}
+h3.cost {
+  text-align: center;
+  font-weight: 600;
+  color: #ff6500;
+}
+section.featuredrecomendations {
+  background-color: #EDF2F3;
+  margin-top: 0;
+}
