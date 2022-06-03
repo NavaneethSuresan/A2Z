@@ -108,3 +108,46 @@ section.featuredrecomendations {
   background-color: #EDF2F3;
   margin-top: 0;
 }
+.featuredrecomendations .slidingitems{
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  align-items: center;
+
+}
+.featuredrecomendations .slidingitems img{
+  width:7vw;
+}
+#ah3{
+  text-align: center;
+}
+.grid{
+  display:grid;
+  grid-template-columns: repeat(4,1fr);
+  margin:8vw;
+  
+}
+.grid .card .info{
+  display:flex;
+  padding:1vw;
+  align-items: center;
+  justify-content: space-between;
+  width:77%;
+  
+  
+  
+}
+.grid .card img{
+  border:1px solid black;
+  background-color:#EBEBEB;
+  border:none;
+  
+}
+.grid .card .info button{
+  padding:0.5vw;
+  background-color: #59AF0F;
+  border:none;
+}
+#winter{
+  padding:1vw 2vw 1vw 2vw;
+}
