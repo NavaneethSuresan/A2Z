@@ -22,7 +22,9 @@
           <select></select>
         </p>
         <input type="text" placeholder="search here" />
-        <button id="search"><img src="img/Icon awesome-search.svg" alt="" /></button>
+        <button id="search">
+          <img src="img/Icon awesome-search.svg" alt="" />
+        </button>
       </div>
       <div class="userinfo">
         <img src="img/Mask Group 69.svg" alt="" />
@@ -139,6 +141,69 @@
         </div>
       </div>
     </div>
+
+    <!--------------------------- Designed for you ------------------------>
+
+    <div class="page-wrapper">
+      <h4 class="todaysdetails">Designs for your tees today</h4>
+
+      <div class="posts-slider1">
+        <i class="fas fa-arrow-left pre"></i>
+        <i class="fas fa-arrow-right nex"></i>
+        <div class="posts-wrapper">
+          <div class="post">
+            <img src="img/shirt-1.png" class="slider-image" />
+
+            <div class="post-info">
+              <h2 class="productnames">Mandelbaum’s<br />$19.99</h2>
+              <button class="cartbutton">Add To Cart</button>
+            </div>
+          </div>
+          <div class="post">
+            <img src="img/shirt-2.png" class="slider-image" />
+
+            <div class="post-info">
+              <h2 class="productnames">Winter Camp<br />$19.99</h2>
+              <button class="cartbutton">Add To Cart</button>
+            </div>
+          </div>
+          <div class="post">
+            <img src="img/shirt-3.png" class="slider-image" />
+
+            <div class="post-info">
+              <h2 class="productnames">Cycling<br />$19.99</h2>
+              <button class="cartbutton">Add To Cart</button>
+            </div>
+          </div>
+
+          <div class="post">
+            <img src="img/shirt-4.png" class="slider-image" />
+
+            <div class="post-info">
+              <h2 class="productnames">Robo Ninja<br />$19.99</h2>
+              <button class="cartbutton">Add To Cart</button>
+            </div>
+          </div>
+          <div class="post">
+            <img src="img/shirt-5.png" class="slider-image" />
+
+            <div class="post-info">
+              <h2 class="productnames">Winter Camp<br />$19.99</h2>
+              <button class="cartbutton">Add To Cart</button>
+            </div>
+          </div>
+          <div class="post">
+            <img src="img/shirt-6.png" class="slider-image" />
+
+            <div class="post-info">
+              <h2 class="productnames">Cycling<br />$19.99</h2>
+              <button class="cartbutton">Add To Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script
       src="https://code.jquery.com/jquery-3.6.0.js"
       integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
@@ -195,6 +260,52 @@
           autoplaySpeed: 2000,
           nextArrow: $(".next"),
           prevArrow: $(".prev"),
+
+          responsive: [
+            {
+              breakpoint: 1200,
+              settings: {
+                slidesToShow: 4,
+                slidesToScroll: 4,
+                infinite: false,
+                dots: false,
+              },
+            },
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 4,
+                slidesToScroll: 4,
+                infinite: false,
+                dots: false,
+              },
+            },
+            {
+              breakpoint: 600,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+              },
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+              },
+            },
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+          ],
+        });
+        $(".posts-wrapper").slick({
+          slidesToShow: 5,
+          slidesToScroll: 1,
+          autoplay: false,
+          autoplaySpeed: 2000,
+          nextArrow: $(".nex"),
+          prevArrow: $(".pre"),
 
           responsive: [
             {
