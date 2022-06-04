@@ -22,18 +22,18 @@
 .inputfield p {
   font-size: 1vw;
   color: black;
-  border: 1px solid black;
   border: none;
   background-color: #e9e9e7;
-  padding:0.5vw;
+  padding: 0.5vw;
+  width: 36%;
 }
 .inputfield select {
   border: 1px solid black;
   border: none;
   background-color: #e9e9e7;
 }
-.inputfield input{
-  padding:0.48vw;
+.inputfield input {
+  padding: 0.48vw;
 }
 .first img {
   width: 100%;
@@ -46,40 +46,40 @@
   display: flex;
   gap: 8%;
   align-items: center;
-  border-left:1px solid white;
-  padding-left:2vw;
+  border-left: 1px solid white;
+  padding-left: 2vw;
 }
-.userinfo p{
-  color:white;
+.userinfo p {
+  color: white;
   font-size: 1vw;
 }
 .userinfo select {
   background-color: inherit;
   border: none;
-  color:white;
+  color: white;
 }
 
 .cartinfo {
   display: flex;
   gap: 8%;
   align-items: center;
-  border-left:1px solid white;
-  padding-left:2vw;
+  border-left: 1px solid white;
+  padding-left: 2vw;
 }
 .cartinfo select {
   background-color: inherit;
   border: none;
-  color:white;
+  color: white;
 }
-.cartinfo p{
-  color:white;
-  font-size:1vw;
+.cartinfo p {
+  color: white;
+  font-size: 1vw;
 }
-.heading1{
+.heading1 {
   font-weight: 300;
   text-align: center;
   margin-top: -1%;
-  padding-top:5%;
+  padding-top: 5%;
 }
 .item1 {
   width: 20%;
@@ -105,53 +105,47 @@ h3.cost {
   color: #ff6500;
 }
 section.featuredrecomendations {
-  background-color: #EDF2F3;
+  background-color: #edf2f3;
   margin-top: 0;
 }
-.featuredrecomendations .slidingitems{
+.featuredrecomendations .slidingitems {
   display: flex;
   justify-content: space-evenly;
   text-align: center;
   align-items: center;
-
 }
-.featuredrecomendations .slidingitems img{
-  width:7vw;
+.featuredrecomendations .slidingitems img {
+  width: 7vw;
 }
-#ah3{
+#ah3 {
   text-align: center;
 }
-.grid{
-  display:grid;
-  grid-template-columns: repeat(4,1fr);
-  margin:8vw;
-  
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 8vw;
 }
-.grid .card .info{
-  display:flex;
-  padding:1vw;
+.grid .card .info {
+  display: flex;
+  padding: 1vw;
   align-items: center;
   justify-content: space-between;
-  width:77%;
-  
-  
-  
+  width: 77%;
 }
-.grid .card img{
-  border:1px solid black;
-  background-color:#EBEBEB;
-  border:none;
-  
+.grid .card img {
+  border: 1px solid black;
+  background-color: #ebebeb;
+  border: none;
 }
-.grid .card .info button{
-  padding:0.5vw;
-  background-color: #59AF0F;
-  border:none;
+.grid .card .info button {
+  padding: 0.5vw;
+  background-color: #59af0f;
+  border: none;
 }
-#winter{
-  padding:1vw 2vw 1vw 2vw;
+#winter {
+  padding: 1vw 2vw 1vw 2vw;
 }
-.arrows{
+.arrows {
   position: relative;
 }
 .arrows .post-slider {
@@ -160,21 +154,21 @@ section.featuredrecomendations {
   overflow: hidden;
   margin-left: 3%;
 }
- .post-slider .item1{
+.post-slider .item1 {
   display: inline-block;
-  
+
   height: 250px;
   width: 250px;
 }
-.next{
+.next {
   position: absolute;
   top: 31%;
   right: 0%;
   color: black;
   cursor: pointer;
-  font-size:2vw;
+  font-size: 2vw;
 }
-.previous{
+.previous {
   position: absolute;
   top: 31%;
   left: 2%;
@@ -182,23 +176,22 @@ section.featuredrecomendations {
   color: black;
   cursor: pointer;
 }
-.arrows .post-slider .item1 .headphones{
+.arrows .post-slider .item1 .headphones {
   left: 12%;
-  width:75%;
-  height:76%;
+  width: 75%;
+  height: 76%;
   position: relative;
 }
-.nexts{
+.nexts {
   position: absolute;
   right: 2%;
   top: 31%;
   font-size: 2rem;
   cursor: pointer;
 }
-div.item1.slick-slide.slick-cloned.slick-active{
+div.item1.slick-slide.slick-cloned.slick-active {
   width: 200px;
 }
-
 
 /********************************
 Amazing Deals
@@ -257,7 +250,7 @@ Amazing Deals
   justify-content: space-between;
 }
 
-button {
+.cartbutton {
   border-radius: 6px;
   height: 6vh;
   width: 38%;
@@ -277,5 +270,4 @@ h4.todaysdetails {
 h2.productnames {
   font-weight: 300;
   font-size: 20px;
-  
 }
