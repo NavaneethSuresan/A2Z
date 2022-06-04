@@ -17,7 +17,7 @@
     <nav class="navbar">
       <img src="img/A2Z-logo.svg" alt="" />
       <div class="inputfield">
-        <p>
+        <p class="categories">
           All categories
           <select></select>
         </p>
@@ -78,8 +78,71 @@
           </div>
         </div>
       </div>
+<<<<<<< HEAD
     
    
+=======
+    </section>
+    <!---------------Post Slidder--------------------------->
+    <div class="page-wrapper">
+      <h4 class="todaysdetails">Amazing-Today's Deals</h4>
+
+      <div class="posts-slider">
+        <i class="fas fa-arrow-left prev"></i>
+        <i class="fas fa-arrow-right next"></i>
+        <div class="post-wrapper">
+          <div class="post">
+            <img src="img/shirt-1.png" class="slider-image" />
+
+            <div class="post-info">
+              <h2 class="productnames">Mandelbaum’s<br />$19.99</h2>
+              <button>Add To Cart</button>
+            </div>
+          </div>
+          <div class="post">
+            <img src="img/shirt-2.png" class="slider-image" />
+
+            <div class="post-info">
+              <h2 class="productnames">Winter Camp<br />$19.99</h2>
+              <button>Add To Cart</button>
+            </div>
+          </div>
+          <div class="post">
+            <img src="img/shirt-3.png" class="slider-image" />
+
+            <div class="post-info">
+              <h2 class="productnames">Cycling<br />$19.99</h2>
+              <button>Add To Cart</button>
+            </div>
+          </div>git
+          <div class="post">
+            <img src="img/shirt-4.png" class="slider-image" />
+
+            <div class="post-info">
+              <h2 class="productnames">Robo Ninja<br />$19.99</h2>
+              <button>Add To Cart</button>
+            </div>
+          </div>
+          <div class="post">
+            <img src="img/shirt-5.png" class="slider-image" />
+
+            <div class="post-info">
+              <h2 class="productnames">Winter Camp<br />$19.99</h2>
+              <button>Add To Cart</button>
+            </div>
+          </div>
+          <div class="post">
+            <img src="img/shirt-6.png" class="slider-image" />
+
+            <div class="post-info">
+              <h2 class="productnames">Cycling<br />$19.99</h2>
+              <button>Add To Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+>>>>>>> a4b473e9abd7372360907f44e7db30fa5e837595
     <script
       src="https://code.jquery.com/jquery-3.6.0.js"
       integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
@@ -128,10 +191,61 @@
             // settings: "unslick"
             // instead of a settings object
           ],
+<<<<<<< HEAD
         }
         
         );
       },);
+=======
+        });
+        $(".post-wrapper").slick({
+          slidesToShow: 5,
+          slidesToScroll: 1,
+          autoplay: false,
+          autoplaySpeed: 2000,
+          nextArrow: $(".next"),
+          prevArrow: $(".prev"),
+
+          responsive: [
+            {
+              breakpoint: 1200,
+              settings: {
+                slidesToShow: 4,
+                slidesToScroll: 4,
+                infinite: false,
+                dots: false,
+              },
+            },
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 4,
+                slidesToScroll: 4,
+                infinite: false,
+                dots: false,
+              },
+            },
+            {
+              breakpoint: 600,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+              },
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+              },
+            },
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+          ],
+        });
+      });
+>>>>>>> a4b473e9abd7372360907f44e7db30fa5e837595
     </script>
   </body>
 </html>
