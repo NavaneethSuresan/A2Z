@@ -22,7 +22,9 @@
           <select></select>
         </p>
         <input type="text" placeholder="search here" />
-        <button id="search"><img src="img/Icon awesome-search.svg" alt="" /></button>
+        <button id="search">
+          <img src="img/Icon awesome-search.svg" alt="" />
+        </button>
       </div>
       <div class="userinfo">
         <img src="img/Mask Group 69.svg" alt="" />
@@ -35,9 +37,14 @@
         <select></select>
       </div>
       <div class="hiddenicons">
-        <img src="img/search.svg" alt="">
-        <img src="img/scart.svg" alt="">
-        <img src="img/menuicon.svg" alt="">
+        <img src="img/search.svg" alt="" />
+        <img src="img/scart.svg" alt="" />
+        <img src="img/menuicon.svg" alt="" onclick='open()'/>
+        <div class="menu" id="menuoption">
+          <p>Sign in</p>
+          <p>Login</p>
+          <button onclick="close()">close</button>
+        </div>
       </div>
     </nav>
     <section class="first">
@@ -144,6 +151,86 @@
         </div>
       </div>
     </div>
+
+    <!--------------------------- Designed for you ------------------------>
+
+    <div class="page-wrapper">
+      <h4 class="todaysdetails">Designs for your tees today</h4>
+
+      <div class="posts-slider1">
+        <i class="fas fa-arrow-left pre"></i>
+        <i class="fas fa-arrow-right nex"></i>
+        <div class="posts-wrapper">
+          <div class="post">
+            <img src="img/shirt-1.png" class="slider-image" />
+
+            <div class="post-info">
+              <h2 class="productnames">Mandelbaum’s<br />$19.99</h2>
+              <button class="cartbutton">Add To Cart</button>
+            </div>
+          </div>
+          <div class="post">
+            <img src="img/shirt-2.png" class="slider-image" />
+
+            <div class="post-info">
+              <h2 class="productnames">Winter Camp<br />$19.99</h2>
+              <button class="cartbutton">Add To Cart</button>
+            </div>
+          </div>
+          <div class="post">
+            <img src="img/shirt-3.png" class="slider-image" />
+
+            <div class="post-info">
+              <h2 class="productnames">Cycling<br />$19.99</h2>
+              <button class="cartbutton">Add To Cart</button>
+            </div>
+          </div>
+
+          <div class="post">
+            <img src="img/shirt-4.png" class="slider-image" />
+
+            <div class="post-info">
+              <h2 class="productnames">Robo Ninja<br />$19.99</h2>
+              <button class="cartbutton">Add To Cart</button>
+            </div>
+          </div>
+          <div class="post">
+            <img src="img/shirt-5.png" class="slider-image" />
+
+            <div class="post-info">
+              <h2 class="productnames">Winter Camp<br />$19.99</h2>
+              <button class="cartbutton">Add To Cart</button>
+            </div>
+          </div>
+          <div class="post">
+            <img src="img/shirt-6.png" class="slider-image" />
+
+            <div class="post-info">
+              <h2 class="productnames">Cycling<br />$19.99</h2>
+              <button class="cartbutton">Add To Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="subscribe">
+      <h1>Subscribe to our newsletter and<br>
+receive exclusive offers every week</h1>
+        <div class="subscriptionfield">
+          <input type="text"placeholder='Enter your email'>
+          <button id="subbutton">SUBSCRIBE</button>
+        </div>
+    </div>
+    <footer>
+      <img src="img/A2Z-black.svg" alt="">
+      <p>High-quality materials are made just for you. Designed for modern Guys and Girls</p>
+      <h5>Contact</h5>
+      <p id="number">tshirt@a2z.com  |  Hotline: +1 131 138 138</p>
+      <hr>
+      <p>DESIGN BY PRINTARO - © 2022. ALL RIGHTS RESERVED.</p>
+
+    </footer>
+
     <script
       src="https://code.jquery.com/jquery-3.6.0.js"
       integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
@@ -239,7 +326,59 @@
             // instead of a settings object
           ],
         });
+        $(".posts-wrapper").slick({
+          slidesToShow: 5,
+          slidesToScroll: 1,
+          autoplay: false,
+          autoplaySpeed: 2000,
+          nextArrow: $(".nex"),
+          prevArrow: $(".pre"),
+
+          responsive: [
+            {
+              breakpoint: 1200,
+              settings: {
+                slidesToShow: 4,
+                slidesToScroll: 4,
+                infinite: false,
+                dots: false,
+              },
+            },
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 4,
+                slidesToScroll: 4,
+                infinite: false,
+                dots: false,
+              },
+            },
+            {
+              breakpoint: 600,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+              },
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+              },
+            },
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+          ],
+        });
       });
+    </script>
+    <script type="text/javascript">
+      function open(){
+        document.getElementById('menuoption').style.display='block'
+      }
+      
     </script>
   </body>
 </html>

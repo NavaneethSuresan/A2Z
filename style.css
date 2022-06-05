@@ -24,8 +24,8 @@
   color: black;
   border: none;
   background-color: #e9e9e7;
-  padding: 0.5vw;
-  width: 40%;
+  padding: 7px;
+  width: 50%;
 }
 .inputfield select {
   border: 1px solid black;
@@ -75,10 +75,10 @@
   color: white;
   font-size: 1vw;
 }
-.navbar .hiddenicons{
+.navbar .hiddenicons {
   display: flex;
   justify-content: space-around;
-  display:none;
+  display: none;
 }
 .heading1 {
   font-weight: 300;
@@ -270,4 +270,127 @@ h4.todaysdetails {
 h2.productnames {
   font-weight: 300;
   font-size: 20px;
+}
+
+/********************************
+Designed For you
+********************************/
+
+.posts-slider1 {
+  position: relative;
+}
+.posts-slider1 .posts-wrapper {
+  width: 90%;
+  height: 450px;
+  margin: 0px auto;
+  overflow: hidden;
+}
+.posts-slider1 .posts-wrapper .post {
+  background: #ebebeb;
+  display: inline-block;
+  width: 300px;
+  height: 248px;
+  margin: 0px 10px;
+}
+.posts-slider1 .posts-wrapper .post .slider-image {
+  left: 12%;
+  width: 75%;
+  height: 76%;
+  position: relative;
+  margin-top: 9%;
+}
+.like {
+  position: relative;
+  top: -62%;
+  left: 4%;
+}
+
+.posts-slider1 .nex {
+  position: absolute;
+  top: 31%;
+  right: 2%;
+  font-size: 2em;
+  color: black;
+  cursor: pointer;
+}
+.posts-slider1 .pre {
+  position: absolute;
+  top: 31%;
+  left: 2%;
+  font-size: 2em;
+  color: black;
+  cursor: pointer;
+}
+.post-info {
+  display: flex;
+  margin-top: 12%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.subscribe {
+  display: flex;
+  background-color: #222f42;
+  align-items: center;
+  padding: 3%;
+  gap:5%;
+  margin:0 5%;
+}
+.subscribe h1 {
+  color: white;
+}
+.subscribe .subscriptionfield {
+display: flex;
+gap: 5%;
+}
+.subscribe .subscriptionfield input {
+  padding: 0 25% 0 10%;
+  border-radius: 20px;
+  font-size: large;
+}
+#subbutton {
+  border-radius: 3vw;
+  background-color: #ff6500;
+  color: white;
+  border: none;
+  padding:0 5%;
+}
+footer {
+  text-align: center;
+  margin-top: 10px;
+  
+}
+footer img {
+  padding: 2%;
+}
+footer h5 {
+  margin-top: 2%;
+}
+footer p {
+  padding: 1%;
+  color: #808080;
+  font-size: 1vw;
+}
+hr {
+  color: #808080;
+}
+
+#number {
+  padding-bottom: 1%;
+  color: black;
+}
+@media screen and (max-width: 500px) {
+  .navbar .hiddenicons {
+    display: flex;
+    gap: 19%;
+  }
+  .navbar .inputfield {
+    display: none;
+  }
+  .navbar .userinfo {
+    display: none;
+  }
+  .navbar .cartinfo {
+    display: none;
+  }
 }
