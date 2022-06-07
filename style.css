@@ -35,6 +35,9 @@
 .inputfield input {
   padding: 0.48vw;
 }
+.first{
+  position: relative;
+}
 .first img {
   width: 100%;
 }
@@ -129,6 +132,8 @@ section.featuredrecomendations {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   margin: 8vw;
+  align-items: center;
+  
 }
 .grid .card .info {
   display: flex;
@@ -136,17 +141,29 @@ section.featuredrecomendations {
   align-items: center;
   justify-content: space-between;
   width: 77%;
+  background-color: white;
 }
 .grid .card img {
-  border: 1px solid black;
+  /* border: 1px solid black;
   background-color: #ebebeb;
   border: none;
+  padding:1%; */
+  background-color: #ebebeb;
+  width: 80%;
+  height: 240px;
+  padding:1%;
 }
 .grid .card .info button {
   padding: 0.5vw;
   background-color: #59af0f;
   border: none;
+  color:white;
+  white-space: nowrap;
 }
+.grid .card{
+  position: relative;
+}
+
 #winter {
   padding: 1vw 2vw 1vw 2vw;
 }
@@ -161,7 +178,6 @@ section.featuredrecomendations {
 }
 .post-slider .item1 {
   display: inline-block;
-
   height: 250px;
   width: 250px;
 }
@@ -379,6 +395,69 @@ hr {
   padding-bottom: 1%;
   color: black;
 }
+.input{
+  position: absolute;
+  top:20%;
+  left:30%;
+  text-align: center;
+  border: 1px solid black;
+  background-color: white;
+  padding: 5%;
+}
+.input input{
+  border-radius:20px;
+  padding:0 5% 0 3%;
+  margin-bottom: 1vw;
+}
+.input button{
+  border:none;
+  background-color:#ff6500 ;
+  color:white;
+  padding:1% 20%;
+  border-radius: 20px;
+}
+.input .checkbox{
+  display:flex;
+  align-items: center;
+  font-size: 1vw;
+  gap:4%;
+  width:111%;
+  justify-content: center;
+}
+.input .signed{
+  display: flex;
+}
+.popular{
+  display:flex;
+  justify-content: space-between;
+  margin-top: 2%;
+  align-items: center;
+  
+}
+.popular .popularinfo{
+  display:flex;
+  gap:3%;
+  width: 30%;
+  align-items: center;
+}
+.popular .popularinfo button{
+  border:1px solid black;
+  padding:2%;
+  border-radius: 23px;
+  background-color: white;
+
+}
+.popular .popularinfo select{
+  border:none;
+  background-color: inherit;
+}
+#heart{
+  width: 2vw;
+  position:absolute;
+}
+
+
+
 @media screen and (max-width: 500px) {
   .navbar .hiddenicons {
     display: flex;
