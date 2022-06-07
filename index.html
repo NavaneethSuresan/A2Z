@@ -39,7 +39,7 @@
       <div class="hiddenicons">
         <img src="img/search.svg" alt="" />
         <img src="img/scart.svg" alt="" />
-        <img src="img/menuicon.svg" alt="" onclick='open()'/>
+        <img src="img/menuicon.svg" alt="" onclick="open()" />
         <div class="menu" id="menuoption">
           <p>Sign in</p>
           <p>Login</p>
@@ -55,8 +55,10 @@
         Your recently viewed items & featured recomendations
       </h3>
       <div class="arrows">
-        <i class="fas fa-arrow-left previous"></i>
-        <i class="fas fa-arrow-right nexts"></i>
+        <!-- <i class="fas fa-arrow-left previous"></i>
+        <i class="fas fa-arrow-right nexts"></i> -->
+        <img src="img/arrowleft.png" alt="" class="previous" />
+        <img src="img/arrowright.png" alt="" class="nexts" />
         <div class="post-slider">
           <div class="item1">
             <img src="img/headphone.png" alt="" class="headphones" />
@@ -96,8 +98,10 @@
       <h4 class="todaysdetails">Amazing-Today's Deals</h4>
 
       <div class="posts-slider">
-        <i class="fas fa-arrow-left prev"></i>
-        <i class="fas fa-arrow-right next"></i>
+        <!-- <i class="fas fa-arrow-left prev"></i>
+        <i class="fas fa-arrow-right next"></i> -->
+        <img src="img/arrowleft.png" alt="" class="prev" />
+        <img src="img/arrowright.png" alt="" class="next" />
         <div class="post-wrapper">
           <div class="post">
             <img src="img/shirt-1.png" class="slider-image" />
@@ -158,8 +162,10 @@
       <h4 class="todaysdetails">Designs for your tees today</h4>
 
       <div class="posts-slider1">
-        <i class="fas fa-arrow-left pre"></i>
-        <i class="fas fa-arrow-right nex"></i>
+        <!-- <i class="fas fa-arrow-left pre"></i> -->
+        <img src="img/arrowleft.png" alt="" class="pre" />
+        <img src="img/arrowright.png" alt="" class="nex" />
+        <!-- <i class="fas fa-arrow-right nex"></i> -->
         <div class="posts-wrapper">
           <div class="post">
             <img src="img/shirt-1.png" class="slider-image" />
@@ -214,21 +220,25 @@
       </div>
     </div>
     <div class="subscribe">
-      <h1>Subscribe to our newsletter and<br>
-receive exclusive offers every week</h1>
-        <div class="subscriptionfield">
-          <input type="text"placeholder='Enter your email'>
-          <button id="subbutton">SUBSCRIBE</button>
-        </div>
+      <h1>
+        Subscribe to our newsletter and<br />
+        receive exclusive offers every week
+      </h1>
+      <div class="subscriptionfield">
+        <input type="text" placeholder="Enter your email" />
+        <button id="subbutton">SUBSCRIBE</button>
+      </div>
     </div>
     <footer>
-      <img src="img/A2Z-black.svg" alt="">
-      <p>High-quality materials are made just for you. Designed for modern Guys and Girls</p>
+      <img src="img/A2Z-black.svg" alt="" />
+      <p>
+        High-quality materials are made just for you. Designed for modern Guys
+        and Girls
+      </p>
       <h5>Contact</h5>
-      <p id="number">tshirt@a2z.com  |  Hotline: +1 131 138 138</p>
-      <hr>
+      <p id="number">tshirt@a2z.com | Hotline: +1 131 138 138</p>
+      <hr />
       <p>DESIGN BY PRINTARO - © 2022. ALL RIGHTS RESERVED.</p>
-
     </footer>
 
     <script
@@ -375,10 +385,9 @@ receive exclusive offers every week</h1>
       });
     </script>
     <script type="text/javascript">
-      function open(){
-        document.getElementById('menuoption').style.display='block'
+      function open() {
+        document.getElementById("menuoption").style.display = "block";
       }
-      
     </script>
   </body>
 </html>
